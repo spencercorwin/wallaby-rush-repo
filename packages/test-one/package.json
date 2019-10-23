@@ -2,6 +2,7 @@
   "name": "test-one",
   "version": "1.0.0",
   "dependencies": {
+    "execa": "~3.2.0",
     "ts-node": "~8.4.1"
   }
 }
