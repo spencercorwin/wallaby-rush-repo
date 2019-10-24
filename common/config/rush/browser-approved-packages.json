@@ -3,11 +3,19 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@types/node",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "execa",
       "allowedCategories": [ "production" ]
     },
     {
       "name": "ts-node",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript",
       "allowedCategories": [ "production" ]
     }
   ]
