@@ -20,6 +20,11 @@
       "packageName": "test-one",
       "projectFolder": "packages/test-one",
       "reviewCategory": "production"
+    },
+    {
+      "packageName": "build-tools",
+      "projectFolder": "packages/build-tools",
+      "reviewCategory": "production"
     }
   ]
 }

@@ -3,7 +3,39 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@babel/preset-env",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@neo-one/build-tools",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@neo-one/logger",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "@types/node",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "app-root-dir",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "babel-jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "bn.js",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "codecov",
       "allowedCategories": [ "production" ]
     },
     {
@@ -11,7 +43,43 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "fs-extra",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jest-circus",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jest-junit",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "lodash",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "nyc",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "tmp",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "ts-node",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "tslib",
       "allowedCategories": [ "production" ]
     },
     {

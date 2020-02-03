@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": "../../../../",
-    "paths": {
-      "bn.js": ["node_modules/@neo-one/build-tools/types/bn.js.d.ts"]
-    },
-    "target": "esnext",
+    "baseUrl": ".",
+    "target": "es2017",
     "module": "commonjs",
     "moduleResolution": "node",
     "lib": ["esnext", "dom"],
     "pretty": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "declaration": false,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": false,
     "experimentalDecorators": true,
@@ -22,6 +22,16 @@
     "noUnusedParameters": false,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "bn.js": ["node_modules/@neo-one/build-tools/types/bn.js.d.ts"],
+      "@neo-one/*": ["../neo-one-*/src"]
+    }
+  },
+  "exclude": [
+    "./packages/*/node_modules",
+    "./packages/*/lib",
+    "./packages/*/src/__data__/contracts/**/*.ts",
+    "./packages/*/template/**/*.ts?(x)"
+  ]
 }

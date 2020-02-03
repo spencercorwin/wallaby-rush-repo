@@ -3,20 +3,21 @@
   "commands": [
     {
       "commandKind": "global",
-      "name": "my-global-command",
-      "summary": "Example global custom command",
-      "description": "This is an example custom command that runs once for the entire repo",
+      "name": "test",
+      "summary": "unit test runner",
+      "description": "Run all jest unit tests",
       "safeForSimultaneousRushProcesses": false,
-      "shellCommand": "node common/scripts/my-global-command.js"
-    },
-    {
-      "commandKind": "global",
-      "name": "run-pre-commit",
-      "summary": "Example global custom command",
-      "description": "This is an example custom command that runs once for the entire repo",
-      "safeForSimultaneousRushProcesses": false,
-      "shellCommand": "ts-node --project packages/build-tools/build-configs/tsconfig.cjs.json packages/test-one/pre-commit.ts"
+      "shellCommand": "jest --config ./packages/build-tools/unit.js"
     }
   ],
-  "parameters": []
+  "parameters": [
+    {
+      "parameterKind": "string",
+      "longName": "--test-path-pattern",
+      "shortName": "-t",
+      "argumentName": "PATTERN",
+      "description": "jest pattern matching parameter",
+      "associatedCommands": ["test"]
+    }
+  ]
 }
