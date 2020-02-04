@@ -17,8 +17,8 @@
   },
   "projects": [
     {
-      "packageName": "test-one",
-      "projectFolder": "packages/test-one",
+      "packageName": "test-package",
+      "projectFolder": "packages/test-package",
       "reviewCategory": "production"
     },
     {

@@ -11,19 +11,19 @@ module.exports = function(wallaby) {
         instrument: false
       },
       {
-        pattern: "packages/test-one/package.json",
+        pattern: "packages/test-package/package.json",
         instrument: false
       },
       {
-        pattern: "packages/test-one/tsconfig.json",
+        pattern: "packages/test-package/tsconfig.json",
         instrument: false
       },
-      "packages/test-one/src/**/*.ts",
+      "packages/test-package/src/**/*.ts",
       "!packages/*/src/**/*.test.ts?(x)",
       "!packages/*/.rush/**/*",
       "!packages/*/node_modules/**"
     ],
-    tests: ["packages/test-one/src/__tests__/stringy.test.ts"],
+    tests: ["packages/test-package/src/__tests__/stringy.test.ts"],
     env: {
       type: "node",
       runner: "node"
