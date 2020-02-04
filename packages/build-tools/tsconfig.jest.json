@@ -22,16 +22,7 @@
     "noUnusedParameters": false,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "bn.js": ["node_modules/@neo-one/build-tools/types/bn.js.d.ts"],
-      "@neo-one/*": ["../neo-one-*/src"]
-    }
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": [
-    "./packages/*/node_modules",
-    "./packages/*/lib",
-    "./packages/*/src/__data__/contracts/**/*.ts",
-    "./packages/*/template/**/*.ts?(x)"
-  ]
+  "exclude": ["./packages/*/node_modules"]
 }

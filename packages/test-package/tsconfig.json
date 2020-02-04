@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": "../../../../",
-    "target": "esnext",
+    "baseUrl": ".",
+    "target": "es2017",
     "module": "commonjs",
     "moduleResolution": "node",
     "lib": ["esnext", "dom"],
     "pretty": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "declaration": false,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": false,
     "experimentalDecorators": true,
@@ -20,5 +23,6 @@
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "exclude": ["./packages/*/node_modules"]
 }
