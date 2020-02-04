@@ -19,6 +19,10 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "@types/mocha",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "@types/node",
       "allowedCategories": [ "production" ]
     },

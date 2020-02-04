@@ -15,7 +15,11 @@ module.exports = function(wallaby) {
         instrument: false
       },
       {
-        pattern: "packages/test-package/tsconfig.json",
+        pattern: "packages/test-package/tsconfig.dev.json",
+        instrument: false
+      },
+      {
+        pattern: "packages/test-package/tsconfig.base.json",
         instrument: false
       },
       "packages/test-package/src/**/*.ts",
