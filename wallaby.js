@@ -27,7 +27,8 @@ module.exports = function(wallaby) {
     testFramework: "jest",
     compilers: {
       "**/*.ts?(x)": wallaby.compilers.typeScript({
-        ...require("./packages/build-tools/tsconfig.jest.json").compilerOptions
+        ...require("./packages/build-tools/tsconfig.jest.json").compilerOptions,
+        noEmit: false
       })
     },
     setup: function(wallaby) {
