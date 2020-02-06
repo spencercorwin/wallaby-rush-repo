@@ -37,6 +37,9 @@ module.exports = function(wallaby) {
         "^.+\\.tsx?$": `ts-jest`
       };
       delete jestConfig.rootDir;
+      console.log("WALLABY obj in setup");
+      console.log(wallaby);
+      wallaby._localNodeModules = "hi spencer";
       wallaby.testFramework.configure(jestConfig);
     },
     hints: {
@@ -46,6 +49,17 @@ module.exports = function(wallaby) {
       },
       ignoreCoverage: /istanbul ignore next/
     },
-    trace: true
+    trace: true,
+    postprocessor: function(wallaby) {
+      return new Promise(function(resolve, reject) {
+        try {
+          console.log("WALLABY obj in postprocessor");
+          console.log(wallaby);
+          resolve();
+        } catch (err) {
+          reject(err);
+        }
+      });
+    }
   };
 };
