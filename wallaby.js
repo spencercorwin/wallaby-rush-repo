@@ -33,9 +33,10 @@ module.exports = function(wallaby) {
     },
     setup: function(wallaby) {
       var jestConfig = require("./packages/build-tools/unit.js");
-      jestConfig.transform = {
-        "^.+\\.tsx?$": `ts-jest`
-      };
+      // jestConfig.transform = {
+      //   "^.+\\.tsx?$": `ts-jest`
+      // };
+      delete jestConfig.transform;
       delete jestConfig.rootDir;
       console.log("WALLABY obj in setup");
       console.log(wallaby);
